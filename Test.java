@@ -1,6 +1,6 @@
-	//Name: Semih
-	//Surname: Bað
-	//Student ID:150120070
+//Name: Semih
+//Surname: BaÄŸ
+
 
 import java.io.*;
 import java.util.*;
@@ -14,18 +14,7 @@ public class Test {
 			Scanner input = new Scanner(new File("input.txt"));
 			
 			ArrayList<Object> objects = new ArrayList<>();
-			
-//			ArrayList<Department> departments = new ArrayList<>();				
-//			ArrayList<Project> projects = new ArrayList<>();					//yes
-//			ArrayList<Product> products = new ArrayList<>();                    //yes
-//			ArrayList<Person> persons = new ArrayList<>();						//yes
-//			ArrayList<Customer> customers = new ArrayList<>();					//yes
-//			ArrayList<Employee> employees = new ArrayList<>();					//yes
-//			ArrayList<Manager> managers = new ArrayList<>();					//yes
-//			ArrayList<RegularEmployee> regularEmployees = new ArrayList<>();	//yes
-// 			ArrayList<SalesEmployee> salesEmployees = new ArrayList<>();		//yes
-//			ArrayList<Developer> developers = new ArrayList<>();				//yes
-//			
+				
 			int currentLine = 0;
 
 			while(input.hasNextLine()) {
@@ -198,36 +187,7 @@ public class Test {
 			} 
 			output.println();
 
-			output.close();
-			
-		
-			
-//			ArrayList<RegularEmployee> list = new ArrayList<>();
-//
-//			RegularEmployee reg1 = new RegularEmployee(10, "aaaaa", "qqqq", "man", null, "married", "yes", 1000, null, null, 50);
-//			RegularEmployee reg2 = new RegularEmployee(10, "aaaaa", "qqqq", "man", null, "married", "yes", 2000, null, null, 50);
-//			RegularEmployee reg3 = new RegularEmployee(10, "aaaaa", "qqqq", "man", null, "married", "yes", 6000, null, null, 75);
-//			RegularEmployee reg4 = new RegularEmployee(10, "aaaaa", "qqqq", "man", null, "married", "yes", 4000, null, null, 100);
-//			
-//			list.add(reg1);
-//			list.add(reg2);
-//			list.add(reg3);
-//			list.add(reg4);
-//			
-//			Manager man = new Manager(31, "qqqq", "qqqq", "man", null, "married", "no", 1000, null, null, 10000);
-//			man.setRegularEmployees(list);
-//			man.distributeBonusBudget();
-//			System.out.println(reg1.getBonus());
-//			System.out.println(reg2.getBonus());
-//			System.out.println(reg3.getBonus());
-//			System.out.println(reg4.getBonus());
-//			
-//			
-			
-			
-			
-			
-			
+			output.close();	
 			
 		}
 		catch (Exception e) {
@@ -240,7 +200,6 @@ public class Test {
 	
 	
 	
-	////////////////////////////////////////                 ok
 	public static Person findPersonWithId(String id, ArrayList<Object> objects) throws Exception {		
 		for (int i = 0 ; i < objects.size() ; i++) {
 			if(objects.get(i) instanceof Person) {
@@ -255,7 +214,6 @@ public class Test {
 	}
 	
 	
-	////////////////////////////////////////                     ok
 	public static Employee findEmployeeWithId(String id, ArrayList<Object> objects) throws Exception {		
 		for(int i = 0 ; i < objects.size() ; i++) {
 			if(objects.get(i) instanceof Employee) {
@@ -269,7 +227,6 @@ public class Test {
 	}
 	
 	
-	////////////////////////////////////////                  ok
 	public static RegularEmployee findRegularEmployeeWithId(String id, ArrayList<Object> objects) throws Exception {
 		for (int i = 0 ; i < objects.size() ; i++) {
 			if (objects.get(i) instanceof RegularEmployee) {
@@ -283,7 +240,6 @@ public class Test {
 	}
 	
 	
-	////////////////////////////////////////         ok
 	public static Calendar findDate(String str) {
 		String[] dmy = str.split("/");
 		Calendar date = Calendar.getInstance();
@@ -292,7 +248,6 @@ public class Test {
 	}
 	
 	
-	////////////////////////////////////////                  ok
 	public static ArrayList<Product> findProductsWithName(String[] words, ArrayList<Object> objects) throws Exception {
 		ArrayList<Product> products = new ArrayList<>();
 		
@@ -316,7 +271,6 @@ public class Test {
 	
 	
 	
-	////////////////////////////////////////               ok
 	public static ArrayList<Project> findProjectsWithName (String[] words, ArrayList<Object> objects) throws Exception {
 		ArrayList<Project> projects = new ArrayList<>();
 		
@@ -340,7 +294,6 @@ public class Test {
 	}
 	
 	
-	////////////////////////////////////////       ok
 	public static Department findDepartmentWithName(String name, ArrayList<Object> objects) throws Exception {
 		for (int i = 0 ; i < objects.size() ; i++) {
 			if(objects.get(i) instanceof Department) {
@@ -354,7 +307,6 @@ public class Test {
 	}
 	
 	
-	///////////////////////////////////////////////          ok
 	public static SalesEmployee findBestSalesEmployee(ArrayList<Object> objects) throws Exception {
 		int index = -1;
 		double MaxTotal = 0;
