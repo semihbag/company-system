@@ -1,6 +1,6 @@
-	//Name: Semih
-	//Surname: Bağ
-	//Student ID:150120070
+//Name: Semih
+//Surname: BaÄŸ
+
 
 public class Department {
 	private int departmentId;
