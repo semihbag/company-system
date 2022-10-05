@@ -1,6 +1,6 @@
-	//Name: Semih
-	//Surname: Bað
-	//Student ID:150120070
+//Name: Semih
+//Surname: BaÄŸ
+
 
 import java.util.Calendar;
 
